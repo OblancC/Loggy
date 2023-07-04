@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="containerconfadmin">
+        <div class="imgconfadmin">
+            <img src="./IMG/Config/icon _bell_.svg" alt="sino">
+            <img src="./IMG/Config/icon _credit card_.svg" alt="cartao">
+            <img src="./IMG/Config/icon _account login_.svg" alt="">
+        </div>
+        <div class="descriconfadmin">
+            <span>Notificação</span>
+            <span>ID:45367846</span>
+            <span>Encerrar Sessão</span>
+
+        </div>
+        <div class="toggleconfadmin">
+            <div class="toggle-buttonconfadmin" onclick="Animatedtoggle()">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let toggleconfadmin = document.querySelector(".toggleconfadmin");
+        let textconfadmin = document.querySelector(".textconfadmin")
+        function Animatedtoggle() {
+            toggleconfadmin.classList.toggle("active");
+
+        }
+    </script>
 </body>
+
 </html>
