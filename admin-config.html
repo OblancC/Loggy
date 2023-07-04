@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+   <header>
+    <img src="./IMG/Header/image 2.svg" alt="person">
+    <h3>Manoel Gomes</h3>
+   </header>
+    <div class="containerconfadmin">
+        <div class="imgconfadmin">
+            <img src="./IMG/Config/icon _bell_.svg" alt="sino">
+            <img src="./IMG/Config/icon _credit card_.svg" alt="cartao">
+            <img src="./IMG/Config/icon _account login_.svg" alt="">
+        </div>
+        <div class="descriconfadmin">
+            <span>Notificação</span>
+            <span>ID:45367846</span>
+            <a href="./index.html"><span>Encerrar Sessão</span></a>
+
+        </div>
+        <div class="toggleconfadmin">
+            <div class="toggle-buttonconfadmin" onclick="Animatedtoggle()">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let toggleconfadmin = document.querySelector(".toggleconfadmin");
+        let textconfadmin = document.querySelector(".textconfadmin")
+        function Animatedtoggle() {
+            toggleconfadmin.classList.toggle("active");
+
+        }
+    </script>
+    <footer>
+        <div class="footer-funcionarios-admin">
+<a href="./admin-os.html"><h4>O.S</h4></a>
+<a href=""><h4>|</h4></a>
+<a href="./admin-home.html"><h4>Inicio</h4></a>
+<a href=""><h4>|</h4></a>
+<a href="./admin-config.html"><h4>Config</h4></a>
+<a href=""><h4>|</h4></a>
+<a href="./admin-funcionarios.html"><h4>Funcionário </h4></a>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -15,22 +15,24 @@
     <header><img src="./IMG/Header/image 2.svg" alt="img-alt">
         <h3>Manoel Gomes</h3>
     </header>
-    <div>
-        <div class="card-adm-func_detalhes">
-            <div class="card-img-adm-func_detalhes">
-                <img src="./IMG/Header/image 2.svg" alt="">
-                <div class="card-texto-adm-func">
-                    <h4><strong>Nome:</strong> Jailson Mendes</h4>
-                    <h4><strong>Contrato ID:</strong> 3223214124</h4>
-                    <h4><strong>Registro:</strong> 11/01/2018</h4>
-                    <h4><strong>Endereço:</strong> Rua do Sapo, 93, Jardins, BR</h4>
-                    <h4><strong>Nascimento:</strong> 17/08/1998</h4>
-                </div>
-            </div>
+    <section id="adicionar-os">
+        <div id="tipo-os">
+            <p>Tipo</p>
+            <input type="text" class="input-os" id="tipo-input">
         </div>
+        <div id="cliente-os">
+            <p>Nome do Cliente</p>
+            <input type="text" class="input-os" id="cliente-input">
         </div>
-</div>
-
+        <div id="observacao-os">
+            <p>Observação</p>
+            <input type="text" class="input-os" id="observacao-input">
+        </div>
+        <div id="add-novo-os">
+            <button onclick="adicionarOS()">Adicionar</button>
+        </div>
+    </section>
+    <script src="cards.js"></script>
     <footer>
         <div class="footer-funcionarios-admin">
             <a href="./admin-os.html">
@@ -56,7 +58,5 @@
             </a>
         </div>
     </footer>
-
 </body>
-
 </html>
