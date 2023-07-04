@@ -4,8 +4,26 @@
     box-sizing: border-box;
     padding: 0;
 }
+
 #os{
+    display: flex;
+    justify-content: center;
     background-color: #fff;
+    overflow: auto;
+    height: 70vh;
+    margin: 13px 0 13px 0;
+}
+
+header{
+    background-color: #262626;
+}
+
+#filtros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 .card {
@@ -13,7 +31,7 @@
     border-radius: 10px;
     padding: 10px;
     margin: 0px 5px 10px 5px;
-    width: 400px;
+    width: 85vw;
     cursor: pointer;
     position: relative;
 }
@@ -34,16 +52,61 @@
 
 .status-pendente {
     background-color: red;
+    color: red;
 }
 
 .status-concluido {
     background-color: green;
+    color: green
 }
 
 .status-andamento{
     background-color: blue;
+    color: blue;
 }
 
 .card:hover {
     background-color: hsl(0, 0%, 85%);
+}
+
+#cards-container{
+    max-width: 100%;
+}
+
+footer{
+    background-color: black;
+    height: 15vw;
+    color: #fff;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#filtros{
+    display: flex;
+    justify-content: space-around;
+}
+
+#filtros button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#detalhes{
+    background-color: #d9d9d9;
+    margin: 0 30px 0 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    display: none;
+    font-family: 'Inria Sans', sans-serif;
 }

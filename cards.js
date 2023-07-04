@@ -75,21 +75,50 @@
         detalhes.classList.add('card-detalhes');
         detalhes.innerHTML = 
         `
+        <p><strong>Tipo:</strong> ${data.tipo}</p>
         <p><strong>Nome:</strong> ${data.nome}</p>
         <p><strong>Endereço:</strong> ${data.endereco}</p>
-        <p><strong>Tipo:</strong> ${data.tipo}</p>
         <p><strong>Observação:</strong> ${data.observacao}</p>
         <p><strong>Status:</strong> ${data.status}</p>
         `;
         const cardsContainer = document.getElementById('cards-container');
         const detalhesContainer = document.getElementById('detalhes');
         cardsContainer.style.display = 'none';
+        const filt = document.getElementById('filtros');
+        filt.style.display = 'none';
         detalhesContainer.innerHTML = '';
         detalhesContainer.appendChild(detalhes);
         detalhesContainer.style.display = 'block';
     }
+
+    function filtroStatus(status) {
+        const cardsContainer = document.getElementById('cards-container');
+        cardsContainer.innerHTML = '';
+        dados
+            .filter(data => data.status.toLowerCase() === status.toLowerCase())
+            .forEach(data => {
+                const card = createCard(data);
+                cardsContainer.appendChild(card);
+            });
+    }
+
     const cardsContainer = document.getElementById('cards-container');
     dados.forEach((data) => {
         const card = createCard(data);
         cardsContainer.appendChild(card);
+    });
+
+    const filterPendenteBtn = document.getElementById('filtro-pendente');
+    filterPendenteBtn.addEventListener('click', () => {
+        filtroStatus('Pendente');
+    });
+
+    const filterConcluidoBtn = document.getElementById('filtro-concluido');
+    filterConcluidoBtn.addEventListener('click', () => {
+        filtroStatus('Concluido');
+    });
+
+    const filterAndamentoBtn = document.getElementById('filtro-andamento');
+    filterAndamentoBtn.addEventListener('click', () => {
+        filtroStatus('Andamento');
     });

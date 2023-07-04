@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="./IMG/Header/image 2.svg" alt="">
+    </header>
+    <div id="filtros">
+        <button id="filtro-pendente">Pendente</button>
+        <button id="filtro-concluido">Concluido</button>
+        <button id="filtro-andamento">Em Andamento</button>
+    </div>
     <section id="os">
-    <div id="cards-container"></div>
-    <div id="detalhes"></div>
+        <div id="cards-container"></div>
+        <div id="detalhes"></div>
     </section>
     <script src="cards.js"></script>
+    <footer>
+        <ul>
+            <a href="./admin-os.html"><li>O.S</li></a>
+            <a href="./admin-home.html"><li>Inicio</li></a>
+            <a href="./admin-config.html"><li>Config</li></a>
+            <a href="./admin-funcionarios.html"><li>Funcionario</li></a>
+        </ul>
+    </footer>
 </body>
 </html>
