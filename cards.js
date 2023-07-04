@@ -86,6 +86,8 @@
         cardsContainer.style.display = 'none';
         const filt = document.getElementById('filtros');
         filt.style.display = 'none';
+        const add = document.getElementById('add-os');
+        add.style.display = 'none';
         detalhesContainer.innerHTML = '';
         detalhesContainer.appendChild(detalhes);
         detalhesContainer.style.display = 'block';

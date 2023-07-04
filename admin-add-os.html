@@ -15,22 +15,27 @@
     <header><img src="./IMG/Header/image 2.svg" alt="img-alt">
         <h3>Manoel Gomes</h3>
     </header>
-    <div id="filtros">
-        <button id="filtro-pendente">Pendente</button>
-        <button id="filtro-concluido">Concluido</button>
-        <button id="filtro-andamento">Em Andamento</button>
-    </div>
-    <section id="os">
-        <div id="cards-container"></div>
-        <div id="detalhes"></div>
+    <section id="adicionar-os">
+        <div id="tipo-os">
+            <p>Tipo</p>
+            <input type="text" class="input-os" id="tipo-input">
+        </div>
+        <div id="cliente-os">
+            <p>Nome do Cliente</p>
+            <input type="text" class="input-os" id="cliente-input">
+        </div>
+        <div id="observacao-os">
+            <p>Observação</p>
+            <input type="text" class="input-os" id="observacao-input">
+        </div>
+        <div id="add-novo-os">
+            <button onclick="adicionarOS()">Adicionar</button>
+        </div>
     </section>
     <script src="cards.js"></script>
-    <div id="add-os">
-        <a href="./admin-add-os.html"><button >Adicionar</button></a>
-    </div>
     <footer>
         <div class="footer-funcionarios-admin">
-            <a href="">
+            <a href="./admin-os.html">
                 <h4>O.S</h4>
             </a>
             <a href="">
