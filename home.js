@@ -91,3 +91,10 @@ function showdetalhes(data) {
     detalhesContainer.appendChild(detalhes);
     detalhesContainer.style.display = 'block';
 }
+
+
+const cardsContainer = document.getElementById('cards-container');
+dados.forEach((data) => {
+    const card = createCard(data);
+    cardsContainer.appendChild(card);
+});

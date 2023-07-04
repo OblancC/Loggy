@@ -110,3 +110,12 @@ footer a{
     display: none;
     font-family: 'Inria Sans', sans-serif;
 }
+
+#home h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    text-decoration: underline;
+    font-family: 'Inria Sans', sans-serif;
+}
