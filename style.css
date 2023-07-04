@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     height: 100px;
     background-color: #262626;
@@ -7,11 +7,11 @@ header{
     align-items: center;
 }
 
-body{
+body {
     margin: 0;
 }
 
-header img{
+header img {
     display: flex;
     background-color: white;
     height: 75px;
@@ -21,28 +21,28 @@ header img{
     margin-right: 30px;
 }
 
-header h3{
+header h3 {
     font-family: 'Inria Sans', sans-serif;
     color: white;
     height: 200;
 }
 
-.footer-funcionarios-admin{
+.footer-funcionarios-admin {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
-.footer-funcionarios-admin a{
+.footer-funcionarios-admin a {
     text-decoration: none;
     color: black;
 }
 
-.footer-funcionarios-admin h4{
-font-family: 'Inria Sans', sans-serif;
+.footer-funcionarios-admin h4 {
+    font-family: 'Inria Sans', sans-serif;
 }
 
-.card-adm-func{
+.card-adm-func {
     margin-left: 25px;
     margin-top: 50px;
     height: 100px;
@@ -51,27 +51,27 @@ font-family: 'Inria Sans', sans-serif;
     border-radius: 15px;
 }
 
-.card-img-adm-func img{
+.card-img-adm-func img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     background-color: white;
 }
 
-.card-img-adm-func{
+.card-img-adm-func {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.button-adm-func{
+.button-adm-func {
     padding-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-card-adm-func{
+.btn-card-adm-func {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,42 @@ font-family: 'Inria Sans', sans-serif;
     border-radius: 50px;
 }
 
-.card-texto-adm-func h4{
+.card-texto-adm-func h4 {
     font-family: 'Inria Sans', sans-serif;
     font-weight: 400;
+}
+
+.footer-add-funcionarios-admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-add-funcionarios-admin a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-add-funcionarios-admin h4 {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.add-funcionarios {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-funcionarios h4{
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.card-add-func{
+    margin-left: 25px;
+    margin-top: 50px;
+    height: 520px;
+    width: 300px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
 }
